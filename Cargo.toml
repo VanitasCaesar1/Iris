@@ -1,0 +1,19 @@
+[package]
+name = "pop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = { version = "0.43.1", features = ["lazy"] }
+ollama-rs = { version = "0.2.1", features = ["stream"]}
+reqwest = { version = "0.11.24", features = ["json"] }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+tokio = { version = "1.36.0", features = ["full"] }
+tokio-stream = "0.1.16"
+simple-fs = { version = "0.1", features = ["full"]}
+derive_more = { version= "1.0.0-beta", features = ["from"]}
+actix-web = "4"
+futures = '0.3'
+
+pyo3 = "0.19.0"
